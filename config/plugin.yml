@@ -1,0 +1,112 @@
+name: Volcano
+main: fr.diwaly.volcano.Plugin
+version: 0.9
+commands:
+  volcano:
+    description: Gros nul !
+    usage: /<command> help
+permissions:
+    volcano.*:
+        description: Gives access to all volcano commands
+        default: op
+        children:
+            volcano: true
+            volcano.help: true
+            volcano.create: true
+            volcano.layerhelp: true
+            volcano.stop: true
+            volcano.start: true
+            volcano.list: true
+            volcano.del: true
+            volcano.load: true
+            volcano.timer: true
+            volcano.flowed: true
+            volcano.erupt: true
+            volcano.timerexplo: true
+            volcano.delayexplo: true
+            volcano.nbexplo: true
+            volcano.info: true
+            volcano.near: true
+            volcano.allow: true
+            volcano.world: true
+            volcano.permitted: true
+            volcano.layer: true
+            volcano.modlayer: true
+            volcano.dellayer: true
+            volcano.erupt.explo: true
+            volcano.erupt.effu: true
+    volcano:
+        description: 'This is required to use any "/volcano" commands, unless you use the volcano.* node'
+        default: true
+    volcano.help:
+        description: 'Gives access to the "/volcano help" command'
+        default: true
+    volcano.create:
+        description: 'Gives access to the "/volcano create" command'
+        default: false
+    volcano.layerhelp:
+        description: 'Gives access to the "/volcano layer help" command'
+        default: true
+    volcano.stop:
+        description: 'Gives access to the "/volcano stop" command'
+        default: false
+    volcano.start:
+        description: 'Gives access to the "/volcano start" command'
+        default: false
+    volcano.list:
+        description: 'Gives access to the "/volcano list" command'
+        default: true
+    volcano.del:
+        description: 'Gives access to the "/volcano del" command'
+        default: false
+    volcano.load:
+        description: 'Gives access to the "/volcano load" command'
+        default: false
+    volcano.timer:
+        description: 'Gives access to the "/volcano timer" command'
+        default: false
+    volcano.flowed:
+        description: 'Gives access to the "/volcano flowed" command'
+        default: false
+    volcano.erupt:
+        description: 'Gives access to the "/volcano erupt" command'
+        default: false
+    volcano.timerexplo:
+        description: 'Gives access to the "/volcano timerExplo" command'
+        default: false
+    volcano.delayexplo:
+        description: 'Gives access to the "/volcano delayExplo" command'
+        default: false
+    volcano.nbexplo:
+        description: 'Gives access to the "/volcano nbExplo" command'
+        default: false
+    volcano.info:
+        description: 'Gives access to the "/volcano info" command'
+        default: true
+    volcano.near:
+        description: 'Gives access to the "/volcano near" command'
+        default: true
+    volcano.allow:
+        description: 'Gives access to the "/volcano allow" command'
+        default: false
+    volcano.world:
+        description: 'Gives access to the "/volcano world" command'
+        default: false
+    volcano.permitted:
+        description: 'Gives access to the "/volcano permitted" command'
+        default: false
+    volcano.layer:
+        description: 'Gives access to the "/volcano layer" command'
+        default: false
+    volcano.modlayer:
+        description: 'Gives access to the "/volcano modlayer" command'
+        default: false
+    volcano.dellayer:
+        description: 'Gives access to the "/volcano dellayer" command'
+        default: false
+    volcano.erupt.explo:
+        description: 'Gives access to the "/volcano erupt explo" command'
+        default: true
+    volcano.erupt.effu:
+        description: 'Gives access to the "/volcano erupt effu" command'
+        default: true

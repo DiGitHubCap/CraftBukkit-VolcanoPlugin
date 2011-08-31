@@ -1,0 +1,32 @@
+<project name="simpleCompile" default="deploy" basedir=".">
+    <target name="init">
+	<property name="sourceDir" value="fr/diwaly/volcano" />
+        <property name="outputDir" value="temp" />
+        <property name="libdir" value="lib/" />
+        <property name="jarname" value="Volcano" />
+        <property name="config" value="config/" />
+	<property name="dist" value="bin" />
+    </target>
+    <target name="clean" depends="init">
+        <deltree dir="${outputDir}" />
+    </target>
+    <target name="prepare" depends="clean">
+        <mkdir dir="${outputDir}" />
+    </target>
+    <target name="compile" depends="prepare">
+        <javac destdir="${outputDir}">
+            <src path="${sourceDir}"/>
+            <classpath>
+                <fileset dir="${libdir}">
+                    <include name="*.jar" />
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+    <target name="deploy" depends="compile,init">
+          <zip destfile="${dist}/${jarname}.jar">
+            <fileset dir="${outputDir}"/>
+            <fileset dir="${config}"/>
+          </zip>
+    </target>
+</project>

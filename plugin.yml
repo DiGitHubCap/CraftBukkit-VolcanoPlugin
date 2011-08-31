@@ -1,0 +1,7 @@
+name: Volcano
+main: fr.diwaly.volcano.Plugin
+version: 0.85
+commands:
+  volcano:
+    description: Gros nul !
+    usage: /<command> help
