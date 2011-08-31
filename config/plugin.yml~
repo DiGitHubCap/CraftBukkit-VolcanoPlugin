@@ -33,6 +33,8 @@ permissions:
             volcano.layer: true
             volcano.modlayer: true
             volcano.dellayer: true
+            volcano.erupt.explo: true
+            volcano.erupt.effu: true
     volcano:
         description: 'This is required to use any "/volcano" commands, unless you use the volcano.* node'
         default: true
@@ -102,3 +104,9 @@ permissions:
     volcano.dellayer:
         description: 'Gives access to the "/volcano dellayer" command'
         default: false
+    volcano.erupt.explo:
+        description: 'Gives access to the "/volcano erupt explo" command'
+        default: true
+    volcano.erupt.effu:
+        description: 'Gives access to the "/volcano erupt effu" command'
+        default: true

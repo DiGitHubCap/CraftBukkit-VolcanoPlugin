@@ -105,8 +105,8 @@ permissions:
         description: 'Gives access to the "/volcano dellayer" command'
         default: false
     volcano.erupt.explo:
-        description: 'Gives access to the "/volcano erupt explo" command'
+        description: 'Gives access to the "/volcano erupt <volcanoname> explo" command'
         default: true
     volcano.erupt.effu:
-        description: 'Gives access to the "/volcano erupt effu" command'
+        description: 'Gives access to the "/volcano erupt <volcanoname> effu" command'
         default: true
